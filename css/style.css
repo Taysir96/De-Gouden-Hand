@@ -1,0 +1,492 @@
+@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@1,300&family=Bilbo+Swash+Caps&family=Oxygen:wght@300&display=swap');
+
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    margin: 0px;
+    padding: 0;
+}
+
+.info {
+    display: none;
+}
+
+.head-container {
+    width: 100%;
+    margin: auto;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0px;
+}
+
+.logo img {
+    height: 70px;
+    padding-left: 50%;
+}
+
+.logo-text h1 a {
+    font-size: 30px;
+    font-family: 'Bilbo Swash Caps', cursive;
+    color: rgb(233, 203, 32);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.icon-slide {
+    color: rgb(105, 105, 105);
+    font-size: 50px;
+    padding-right: 5%;
+    cursor: pointer;
+}
+
+i.icon-close {
+    display: none;
+}
+
+nav {
+    width: 100%;
+    background-color: rgba(146, 124, 1, 0.562);
+    position: absolute;
+    text-align: center;
+    top: -100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    margin: 5px 0px;
+    padding: 10px 30px;
+}
+
+ul img {
+    height: 50px;
+}
+
+.banner {
+    width: 90%;
+    height: 500px;
+    margin: 0 auto;
+    background-image: url("../images/banner.jpg");
+    background-size: cover;
+    background-position: right;
+    border: 3px solid gold;
+    transition: 1s;
+}
+
+.line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 5% auto;
+}
+
+.line i {
+    padding-right: 5px;
+}
+
+.line span {
+    height: 1px;
+    width: 40%;
+    background-color: rgb(105, 105, 105);
+}
+
+.line div {
+    color: rgb(105, 105, 105);
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.welkom-container {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.welkom-container section {
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-name: slidein;
+    background-position: center;
+    background-size: cover;
+    border: 3px solid gold;
+    width: 100%;
+    height: 400px;
+}
+
+.welkom-container article {
+    width: 100%;
+    color: gray;
+    text-align: justify;
+}
+
+.welkom-container h1 {
+    color: rgb(90, 90, 90);
+    font-weight: bold;
+    margin: 0;
+}
+
+.banner-service {
+    background-image: url("../images/slider.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 90%;
+    height: 300px;
+    margin: auto;
+    border: 3px solid gold;
+    transition: 1s;
+}
+
+.service-container {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.service-container article {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.service-container img {
+    width: 100px;
+    transition: 3.5s;
+}
+
+.service-container img:hover {
+    transform: rotate(360deg);
+    transition: 2s;
+}
+
+.service-container h3 {
+    color: rgb(250, 170, 66);
+}
+
+.service-container p {
+    color: gray;
+    text-align: justify;
+}
+
+.banner-priceList {
+    background-image: url("../images/banner_price.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 90%;
+    height: 300px;
+    margin: auto;
+    border: 3px solid gold;
+    transition: 1s;
+}
+
+.priceList-container {
+    width: 90%;
+    margin: auto;
+}
+
+.priceList-container p {
+    font-size: 20px;
+    color: rgb(82, 82, 82);
+    border-left: 2px solid gray;
+    padding: 0 50px;
+}
+
+.priceList-container table {
+    border-left: 2px solid gray;
+    margin: 100px 0;
+
+}
+
+.priceList-container th {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    float: left;
+    margin: 20px 0;
+    font-size: 20px;
+    padding: 0 50px;
+}
+
+.priceList-container tr {
+    color: rgb(105, 105, 105);
+    font-size: 15px;
+}
+
+.priceList-container td {
+    padding: 5px 50px;
+}
+
+.background-contact {
+    background-image: url("../images/background_contact.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 550px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.contact-container article {
+    background-color: rgba(233, 203, 32, 0.6);
+    color: rgb(255, 255, 255);
+    width: 100%;
+    height: 40%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+}
+
+.contact-container p {
+    padding: 0 40px;
+}
+
+.contact-container h1 {
+    padding: 0 40px;
+}
+
+.contact-container section {
+    background-color: rgba(8, 8, 8, 0.6);
+    color: white;
+    width: 100%;
+    margin: auto;
+    height: 60%;
+    display: flex;
+    align-items: center;
+}
+
+.contact-container section div {
+    padding: 0 40px;
+}
+
+input {
+    width: 300px;
+    height: 30px;
+}
+
+.verzenden {
+    background-color: rgb(184, 157, 6);
+    color: white;
+    padding: 10px 40px;
+}
+
+textarea {
+    margin-bottom: 10px;
+}
+
+.footer-outer {
+    background-color: rgb(105, 105, 105);
+}
+
+.footer {
+    width: 90%;
+    margin: 0 auto;
+    background-color: rgb(105, 105, 105);
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3% 0;
+}
+
+.footer div {
+    width: 100%;
+}
+
+.footer span {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.footer div i,
+a {
+    color: white;
+    padding-right: 10px;
+    font-size: 20px;
+}
+
+@media (min-width:480px) {
+    #inloggen {
+        display: none;
+    }
+
+    .info {
+        background-color: black;
+        height: 30px;
+        padding: 0 15%;
+        display: flex !important;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .icon-contact i {
+        color: white;
+        padding: 0 5px;
+    }
+
+    .inloggen a {
+        color: white;
+        text-decoration: none;
+        font-size: 15px;
+    }
+
+    .icon-slide {
+        display: none;
+    }
+
+    .head-container,
+    .banner,
+    .welkom-container,
+    .banner-service,
+    .service-container,
+    .banner-priceList,
+    .priceList-container,
+    .contact-container {
+        width: 70%;
+        transition: 1s;
+    }
+
+    nav {
+        position: static;
+        background-color: transparent;
+        display: flex;
+        justify-content: right;
+        width: 60%;
+    }
+
+    nav ul li {
+        display: inline-block;
+    }
+
+    nav ul li a {
+        padding: 0px 10px;
+        font-size: 18px;
+        color: rgb(116, 115, 113);
+    }
+
+    nav ul li a:hover,
+    .footer div i:hover,
+    .icon-contact i:hover {
+        color: rgb(233, 203, 32);
+        transition: 1s;
+        text-decoration: underline;
+        transform: translateY(-5px);
+    }
+
+    .logo-text h1:hover {
+        transform: rotate(360deg);
+        transition: 1s;
+        transition-timing-function: ease-in;
+    }
+
+    ul img {
+        display: none;
+    }
+
+    .logo img {
+        height: 100px;
+        padding: 0;
+    }
+
+    .logo-text h1 a {
+        font-size: 40px;
+    }
+
+    .info {
+        display: block;
+    }
+
+    .line {
+        width: 70%;
+    }
+
+    .welkom-container article {
+        width: 60%;
+    }
+
+    .welkom-container section {
+        width: 35%;
+        height: 250px;
+        margin-left: 4%;
+    }
+
+    .service-container article {
+        width: 23%;
+    }
+
+    .contact-container article {
+        width: 40%;
+        height: 70%;
+    }
+
+    .contact-container section {
+        width: 60%;
+        height: 70%;
+    }
+
+    .footer {
+        width: 70%;
+        flex-wrap: nowrap;
+    }
+}
+
+@media (min-width:768px) {
+    .service-container article {
+        width: 40%;
+        transition: 1s;
+    }
+}
+
+@media (min-width:1024px) {
+    .service-container article {
+        width: 23%;
+        transition: 1s;
+    }
+}
+
+@keyframes slidein {
+    0% {
+        background-image: url("../images/slider-1.jpg");
+
+    }
+
+    25% {
+        background-image: url("../images/slider-2.jpg");
+
+    }
+
+    50% {
+        background-image: url("../images/slider-3.jpg");
+
+    }
+
+    100% {
+        background-image: url("../images/slider.jpg");
+
+    }
+}
